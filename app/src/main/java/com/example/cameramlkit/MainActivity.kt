@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                         val text = label.text
                         val confidence = label.confidence
                         val confidencepercent = round(confidence * 100)
-                        output += "Detected $text with a confidence of $confidencepercent%.\n "
+                        output += "Detected: $text. Confidence: $confidencepercent%.\n "
 
                         //update UI to reflect changes
                         findViewById<TextView>(R.id.boxone).text = output
